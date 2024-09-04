@@ -1,0 +1,80 @@
+[
+  {
+    "id": "playlist1",
+    "name": "Playlist 1",
+    "songs": [
+      {
+        "name": "Song 1",
+        "src": "path/to/song1.mp3"
+      },
+      {
+        "name": "Song 2",
+        "src": "path/to/song2.mp3"
+      },
+      {
+        "name": "Song 3",
+        "src": "path/to/song3.mp3"
+      },
+      {
+        "name": "Song 4",
+        "src": "path/to/song4.mp3"
+      },
+      {
+        "name": "Song 5",
+        "src": "path/to/song5.mp3"
+      }
+    ]
+  },
+  {
+    "id": "playlist2",
+    "name": "Playlist 2",
+    "songs": [
+      {
+        "name": "Track 1",
+        "src": "path/to/track1.mp3"
+      },
+      {
+        "name": "Track 2",
+        "src": "path/to/track2.mp3"
+      },
+      {
+        "name": "Track 3",
+        "src": "path/to/track3.mp3"
+      },
+      {
+        "name": "Track 4",
+        "src": "path/to/track4.mp3"
+      },
+      {
+        "name": "Track 5",
+        "src": "path/to/track5.mp3"
+      }
+    ]
+  },
+  {
+    "id": "playlist3",
+    "name": "Playlist 3",
+    "songs": [
+      {
+        "name": "Audio 1",
+        "src": "path/to/audio1.mp3"
+      },
+      {
+        "name": "Audio 2",
+        "src": "path/to/audio2.mp3"
+      },
+      {
+        "name": "Audio 3",
+        "src": "path/to/audio3.mp3"
+      },
+      {
+        "name": "Audio 4",
+        "src": "path/to/audio4.mp3"
+      },
+      {
+        "name": "Audio 5",
+        "src": "path/to/audio5.mp3"
+      }
+    ]
+  }
+]

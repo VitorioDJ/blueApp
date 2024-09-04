@@ -1,0 +1,36 @@
+[
+  {
+      "id": "Laeela-01",
+      "name": "Day In Bliss Sound Meditations",
+      "songs": [
+          {
+              "name": "Good Morning - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-01-good-morning.mp3"
+          },
+          {
+              "name": "Mind To Heart - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-02-mind-to-heart.mp3"
+          },
+          {
+              "name": "I Am - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-04-i-am.mp3"
+          },
+          {
+              "name": "Polarities Journey - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-05-a-journey.mp3"
+          },
+          {
+              "name": "Gentle Wind - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-05-instrumental.mp3"
+          },
+          {
+              "name": "Divine Coouple - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-06-divine-couple.mp3"
+          },
+          {
+              "name": "Good Night - Sound Meditation",
+              "src": "/static/assets/media-cms/sound/david-neelam-corfu23/dn-03-good-night.mp3"
+          }
+      ]
+  }
+]

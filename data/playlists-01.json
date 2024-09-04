@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Pepe Danza 01",
+    "name": "Chakra Sound Meditations",
+    "songs": [
+      {
+        "name": "Soul Star Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s08-higher-self.mp3"
+      },
+      {
+        "name": "Crown Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s07-all-rainbow.mp3"
+      },
+      {
+        "name": "Third Eye Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s06-indigo-transcendence.mp3"
+      },
+      {
+        "name": "Throat Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s05-blue-communication.mp3"
+      },
+      {
+        "name": "Heart Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s04-green-love.mp3"
+      },
+      {
+        "name": "Solar Plexus Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s03-yellow-power.mp3"
+      },
+      {
+        "name": "Sacral Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s02-orange-creativity.mp3"
+      },
+      {
+        "name": "Root Chakra - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-sssi/sssi-s01-red-grounding.mp3"
+      }
+    ]
+  },
+  {
+    "id": "Pepe Danza 02",
+    "name": "Acceptance Sound Meditations",
+    "songs": [
+      {
+        "name": "Transendence - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-fffd/fffd-6-Transendence.mp3"
+      },
+      {
+        "name": "Acceptance - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-fffd/fffd-5-Acceptance.mp3"
+      },
+      {
+        "name": "Depression - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-fffd/fffd-4-Depression.mp3"
+      },
+      {
+        "name": "Barganing - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-fffd/fffd-3-Barganing.mp3"
+      },
+      {
+        "name": "Anger - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-fffd/fffd-2-Anger.mp3"
+      },
+      {
+        "name": "Denial - Sound Meditation",
+        "src": "/static/assets/media-cms/sound/pepe-fffd/fffd-1-Denial.mp3"
+      }
+    ]
+  },
+  {
+    "id": "Pepe Danza 03",
+    "name": "Ecstatic Dances",
+    "songs": [
+      {
+        "name": "Ecstatic Dance - 30 min. Sound Journey",
+        "src": "/static/assets/media-cms/sound/pepe-ext/pepe-ecstatic-dance.mp3"
+      }
+    ]
+  }
+]

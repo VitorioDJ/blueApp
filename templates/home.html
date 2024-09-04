@@ -8,15 +8,7 @@
         <h1>{{company_name}} Careers</h1>
 
         <p>{{ tabs }}</p>
-        <p>{{ art }}</p>
-
-        <!-- <div>
-            {% for tab in tabs %}
-                <div>
-                    {{ tab['id'] }}<br>{{ tab['title'] }}
-                </div>
-            {% endfor %}
-        </div> -->
+        <!-- <p>{{ art }}</p> -->
 
         <ul>
             {% for key, value in tabs.items() %}
@@ -26,11 +18,11 @@
             {% endfor %}
         </ul>
 
-        <ul>
+        <!-- <ul>
             {% for value in art %}
                 <p>{{ value['name'] }} {{ value['title'] }} {{ value['tab01']['pic'] }} {{ value['tab01']['modal'] }}</p>
             {% endfor %}
-        </ul>
+        </ul> -->
 
 
     </body>
