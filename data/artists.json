@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Laeela - David & Neelam", 
+        "title": "Musicians & Yogis",
+        "pic": "../static/assets/img/team/team-laeela.jpg",
+        "modal": "modal-laeela"
+    },
+
+    {
+        "name": "Pepe Danza", 
+        "title": "World Musician, Zen Master",
+        "pic": "../static/assets/img/team/team-pepe.jpg",
+        "modal": "modal-pepe"
+    },
+
+    {
+        "name": "Hanna & Anne", 
+        "title": "Musician Yoginis",
+        "pic": "../static/assets/img/team/team-hanna2.jpg",
+        "modal": "modal-hanna-anne"
+    },
+
+    {
+        "name": "Marita Hinsel", 
+        "title": "Fine Artist",
+        "pic": "../static/assets/img/team/team-marita.jpg",
+        "modal": "modal-marita"
+    },
+
+    {
+        "name": "Evia Aur", 
+        "title": "Inner Designer",
+        "pic": "../static/assets/img/team/team-evia.jpg",
+        "modal": "modal-evia"
+    },
+
+    {
+        "name": "Vitorio De Janeiro", 
+        "title": "Soul Alchemist",
+        "pic": "../static/assets/img/team/team-vitorio.jpg",
+        "modal": "modal-vitorio"
+    }
+]

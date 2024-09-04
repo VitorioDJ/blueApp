@@ -1,0 +1,44 @@
+{
+    "tab01": {
+        "title": "Sahasrara",
+        "id": "w1-tab",
+        "href": "#pill-tab-w1",
+        "control": "tab-w1"
+    },
+    "tab02": {
+        "title": "Ajna",
+        "id": "w2-tab",
+        "href": "#pill-tab-w2",
+        "control": "tab-w2"
+    },
+    "tab03": {
+        "title": "Vishudda",
+        "id": "w3-tab",
+        "href": "#pill-tab-w3",
+        "control": "tab-w3"
+    },
+    "tab04": {
+        "title": "Anahata",
+        "id": "w4-tab",
+        "href": "#pill-tab-w4",
+        "control": "tab-w4"
+    },
+    "tab05": {
+        "title": "Manipura",
+        "id": "w5-tab",
+        "href": "#pill-tab-w5",
+        "control": "tab-w5"
+    },
+    "tab06": {
+        "title": "Svadhisthana",
+        "id": "w6-tab",
+        "href": "#pill-tab-w6",
+        "control": "tab-w6"
+    },
+    "tab07": {
+        "title": "Muladhara",
+        "id": "w7-tab",
+        "href": "#pill-tab-w7",
+        "control": "tab-w7"
+    }
+}

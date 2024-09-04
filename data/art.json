@@ -1,0 +1,431 @@
+[
+    {
+        "name": "Maria",
+        "title": "Cross Of Cycles",
+        "penta": "penta-3",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p3-maria.jpg",
+            "modal": "modal-maria-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p3-maria.jpg",
+            "modal": "modal-maria-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p3-maria.jpg",
+            "modal": "modal-maria-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p3-maria.jpg",
+            "modal": "modal-maria-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p3-maria.jpg",
+            "modal": "modal-maria-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p3-maria.jpg",
+            "modal": "modal-maria-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p3-maria.jpg",
+            "modal": "modal-maria-s7"
+        }
+    },
+    {
+        "name": "Marita",
+        "title": "Cross Of Rulership",
+        "penta": "penta-2",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p2-marita.jpg",
+            "modal": "modal-marita-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p2-marita.jpg",
+            "modal": "modal-marita-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p2-marita.jpg",
+            "modal": "modal-marita-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p2-marita.jpg",
+            "modal": "modal-marita-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p2-marita.jpg",
+            "modal": "modal-marita-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p2-marita.jpg",
+            "modal": "modal-marita-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p2-marita.jpg",
+            "modal": "modal-marita-s7"
+        }
+    },
+    {
+        "name": "Vitorio",
+        "title": "Cross Of Planning",
+        "penta": "penta-1",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p1-vitorio.jpg",
+            "modal": "modal-vitorio-s7"
+        }
+    },
+    {
+        "name": "Evia",
+        "title": "Cross Of Incarnation",
+        "penta": "penta-1",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p1-evia.jpg",
+            "modal": "modal-evia-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p1-evia.jpg",
+            "modal": "modal-evia-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p1-evia.jpg",
+            "modal": "modal-evia-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p1-evia.jpg",
+            "modal": "modal-evia-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p1-evia.jpg",
+            "modal": "modal-evia-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p1-evia.jpg",
+            "modal": "modal-evia-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p1-evia.jpg",
+            "modal": "modal-evia-s7"
+        }
+    },
+    {
+        "name": "Tom",
+        "title": "Cross Of Tension",
+        "penta": "penta-1",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p1-tom.jpg",
+            "modal": "modal-tom-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p1-tom.jpg",
+            "modal": "modal-tom-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p1-tom.jpg",
+            "modal": "modal-tom-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p1-tom.jpg",
+            "modal": "modal-tom-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p1-tom.jpg",
+            "modal": "modal-tom-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p1-tom.jpg",
+            "modal": "modal-tom-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p1-tom.jpg",
+            "modal": "modal-tom-s7"
+        }
+    },
+    {
+        "name": "Nas",
+        "title": "Cross Of Sleeping Phoenix",
+        "penta": "penta-3",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p3-nas.jpg",
+            "modal": "modal-nas-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p3-nas.jpg",
+            "modal": "modal-nas-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p3-nas.jpg",
+            "modal": "modal-nas-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p3-nas.jpg",
+            "modal": "modal-nas-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p3-nas.jpg",
+            "modal": "modal-nas-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p3-nas.jpg",
+            "modal": "modal-nas-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p3-nas.jpg",
+            "modal": "modal-nas-s7"
+        }
+    },
+    {
+        "name": "Cheryl",
+        "title": "Cross Of Sleeping Phoenix",
+        "penta": "penta-1",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p1-cheryl.jpg",
+            "modal": "modal-cheryl-s7"
+        }
+    },
+    {
+        "name": "Hanna",
+        "title": "Cross Of Unexpected",
+        "penta": "penta-2",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p2-hanna.jpg",
+            "modal": "modal-hanna-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p2-hanna.jpg",
+            "modal": "modal-hanna-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p2-hanna.jpg",
+            "modal": "modal-hanna-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p2-hanna.jpg",
+            "modal": "modal-hanna-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p2-hanna.jpg",
+            "modal": "modal-hanna-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p2-hanna.jpg",
+            "modal": "modal-hanna-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p2-hanna.jpg",
+            "modal": "modal-hanna-s7"
+        }
+    },
+    {
+        "name": "Eve",
+        "title": "Cross Of Wishes",
+        "penta": "penta-3",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p3-eve.jpg",
+            "modal": "modal-eve-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p3-eve.jpg",
+            "modal": "modal-eve-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p3-eve.jpg",
+            "modal": "modal-eve-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p3-eve.jpg",
+            "modal": "modal-eve-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p3-eve.jpg",
+            "modal": "modal-eve-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p3-eve.jpg",
+            "modal": "modal-eve-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p3-eve.jpg",
+            "modal": "modal-eve-s7"
+        }
+    },
+    {
+        "name": "Bella",
+        "title": "Cross Of Sleeping Phoenix",
+        "penta": "penta-3",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p3-bella.jpg",
+            "modal": "modal-bella-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p3-bella.jpg",
+            "modal": "modal-bella-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p3-bella.jpg",
+            "modal": "modal-bella-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p3-bella.jpg",
+            "modal": "modal-bella-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p3-bella.jpg",
+            "modal": "modal-bella-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p3-bella.jpg",
+            "modal": "modal-bella-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p3-bella.jpg",
+            "modal": "modal-bella-s7"
+        }
+    },
+    {
+        "name": "Giacomo",
+        "title": "Cross Of Explanation",
+        "penta": "penta-1",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p1-giacomo.jpg",
+            "modal": "modal-giacomo-s7"
+        }
+    },
+    {
+        "name": "Claudia",
+        "title": "Cross Of Cycles",
+        "penta": "penta-2",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p2-claudia.jpg",
+            "modal": "modal-claudia-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p2-claudia.jpg",
+            "modal": "modal-claudia-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p2-claudia.jpg",
+            "modal": "modal-claudia-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p2-claudia.jpg",
+            "modal": "modal-claudia-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p2-claudia.jpg",
+            "modal": "modal-claudia-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p2-claudia.jpg",
+            "modal": "modal-claudia-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p2-claudia.jpg",
+            "modal": "modal-claudia-s7"
+        }
+    },
+    {
+        "name": "Evan",
+        "title": "Cross Of Planning",
+        "penta": "penta-2",
+        "tab01": {
+            "pic": "../static/assets/img/projects/s1-p2-evan.jpg",
+            "modal": "modal-evan-s1"
+        },
+        "tab02": {
+            "pic": "../static/assets/img/projects/s2-p2-evan.jpg",
+            "modal": "modal-evan-s2"
+        },
+        "tab03": {
+            "pic": "../static/assets/img/projects/s3-p2-evan.jpg",
+            "modal": "modal-evan-s3"
+        },
+        "tab04": {
+            "pic": "../static/assets/img/projects/s4-p2-evan.jpg",
+            "modal": "modal-evan-s4"
+        },
+        "tab05": {
+            "pic": "../static/assets/img/projects/s5-p2-evan.jpg",
+            "modal": "modal-evan-s5"
+        },
+        "tab06": {
+            "pic": "../static/assets/img/projects/s6-p2-evan.jpg",
+            "modal": "modal-evan-s6"
+        },
+        "tab07": {
+            "pic": "../static/assets/img/projects/s7-p2-evan.jpg",
+            "modal": "modal-evan-s7"
+        }
+    }
+]
