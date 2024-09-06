@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify
-import sys, json
+import sys, json, os
 sys.path.append('./modules')
 from functions import update_json_with_tabs
 
@@ -9,33 +9,11 @@ def load_playlists():
     with open(os.path.join('data', 'playlists.json'), 'r') as f0:
         return json.load(f0)
 
-@app.route('/player')
-def index():
-    playlists = load_playlists()
-    return render_template('player.html', playlists=playlists)
-
-@app.route('/playlists')
-def get_playlists():
-    playlists = load_playlists()
-    return jsonify(playlists)
-                                                
 @app.route("/")
-def jovCareer():
-
-    with open('./data/tabs.json', 'r') as f1:
-        TABS = json.load(f1)
-
-    with open('./data/art.json', 'r') as f3:
-        ART = json.load(f3)
-
-    return render_template('home.html', 
-                            tabs=TABS,
-                            art=ART,
-                            company_name='Jovian33'
-                            )
-
-
-@app.route("/blue")
+def splash():
+    return render_template('splash.html')
+                                           
+@app.route("/main")
 def blueApp():
     with open('./data/artists.json', 'r') as f1:
         ARTISTS = json.load(f1)
@@ -52,10 +30,20 @@ def blueApp():
                             artists=ARTISTS
                             )
 
-@app.route("/test")
-def test():
+@app.route("/temp")
+def jovCareer():
 
-    return render_template('test-01.html')
+    with open('./data/tabs.json', 'r') as f1:
+        TABS = json.load(f1)
+
+    with open('./data/art.json', 'r') as f3:
+        ART = json.load(f3)
+
+    return render_template('home.html', 
+                            tabs=TABS,
+                            art=ART,
+                            company_name='Jovian33'
+                            )
 
 
 @app.route("/api/update-tabs")
