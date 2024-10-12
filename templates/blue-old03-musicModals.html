@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>blue</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="../static/assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="../static/assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link
+    href="../static/assets/css/fonts-raleway.css?family=Raleway:100,200,300,400,500,700&amp;#x7c;Trirong:200,200i,300,300i,400,400i"
+    rel="stylesheet">
+  <link href="../static/assets/css/fonts-roboto.css?family=Roboto:100,300,400,500,700,900&amp;#x7c" rel="stylesheet">
+  <link href="../static/assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
+  <link href="../static/assets/lib/remodal/remodal.css" rel="stylesheet">
+  <link href="../static/assets/lib/remodal/remodal-default-theme.css" rel="stylesheet">
+  <link href="../static/assets/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+  <link href="../static/assets/css/theme.css" rel="stylesheet">
+  <link href="../static/assets/lib/plyr/plyr.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="../static/assets/css/vik-hor-scroll.css" rel="stylesheet">
+
+</head>
+
+
+<body data-spy="scroll" data-target="#navbar-one-page" data-offset="80">
+
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-theme fixed-top py-0">
+    <div class="container">
+      <!-- <a class="navbar-brand font-weight-normal ls-1" href="#top" data-fancyscroll="data-fancyscroll" data-offset="64">
+        <img class="testimonial-company-logo d-inline-block opacity-80"
+          src="../static/assets/img/logo/b&amp;w/col-logo.png" alt="" />
+      </a> -->
+
+      <a class="navbar-brand font-weight-normal" href="#" id="mute-toggle" data-fancyscroll="data-fancyscroll" data-toggle="tooltip" data-placement="top" title="Mute / Unmute">
+        <i class="fas fa-volume-up" id="mute-icon"></i>
+      </a>
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto" id="navbar-one-page">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown1"><b>Music</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown1">
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-pepe">Pepe Danza</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-laeela">Laeela</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-hanna-anne">Hanna & Anne</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown2"><b>Artwork</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown2">
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-evia">Evia</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-vitorio">Vitorio</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-giacomo">Giacomo</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-marita">Marita</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown3"><b>Video</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown3">
+              <a class="dropdown-item" href="#!"
+                onclick="addVideo('../static/assets/media-cms/video/anim/blueAppHome.mp4');">Wave</a>
+              <a class="dropdown-item" href="#!"
+                onclick="addVideo('../static/assets/media-cms/video/anim/Water-01.mp4');">Water 1</a>
+              <a class="dropdown-item" href="#!"
+                onclick="addVideo('../static/assets/media-cms/video/anim/Water-02.mp4');">Water 2</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown4"><b>Meditation</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown4">
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-medit-vitorio">Vitorio</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-medit-evia">Evia</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://courses.empower-house.org" data-fancyscroll="data-fancyscroll"
+              data-offset="64" data-toggle="tooltip" data-placement="top" title="Logout">
+              <i class="fas fa-sign-out-alt fa-2x"></i> <!-- Font Awesome logout icon -->
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main>
+
+
+    <!-- ============================================-->
+    <!-- Preloader ==================================-->
+    <div class="preloader" id="preloader">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-white-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================-->
+    <!-- End of Preloader ===========================-->
+
+
+    <section class="py-0 text-center" id="top" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+
+      <div class="bg-holder overlay overlay-z-index-1"
+        style="background-image:url(../static/assets/img/headers/header-blue.jpg);">
+
+        <!-- Local player from Hosting Provider -->
+        <video class="bg-video" autoplay="autoplay" loop="loop" muted="muted">
+          <source src="../static/assets/media-cms/video/anim/blueAppHome.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+      <div class="header-overlay"></div>
+      <div class="container">
+
+        <div class="d-flex flex-center vh-100">
+          <div class="header-text">
+            <div class="overflow-hidden">
+              <img class="w-50 opacity-40" data-zanim-xs='{"duration":3,"delay":0}'
+                src="../static/assets/img/illustration/blue-title-2.png" alt="" />
+              <p id="sub-title" class="lead display-3 text-white fs-2 fs-md-4"
+                data-zanim-xs='{"duration":3,"delay":1.2}'>Relax Deeper</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#start-here"
+            data-fancyscroll="data-fancyscroll" data-offset="64"><span class="indicator-arrow indicator-arrow-one"
+              data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-200" id="start-here">
+
+      <div class="container">
+
+        <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+          <div class="col">
+            <div class="overflow-hidden">
+              <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>Chakra<span
+                  class="font-weight-bold ml-1">Activations</span>
+                <a class="btn-back-to-top" data-toggle="tooltip" data-placement="top" title="Back to top" href="#top"
+                  data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg" width="8" alt=""></a>
+              </h3>
+              <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
+                Energize Yourself</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="image-scroll-container">
+          <div class="image-scroll">
+
+            {% for animation in animations %}
+            <div class="image-item">
+              <img src="{{ animation['thumb'] }}" alt="{{ animation['title'] }}">
+              <div class="image-title">{{ animation['title'] }}</div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div> -->
+
+        <div class="image-scroll-container">
+          <div class="image-scroll">
+
+            {% for animation in animations %}
+            <div class="image-item">
+              <a href="#!" onclick="addVideo({{ animation['src'] }});">
+                <img src="{{ animation['thumb'] }}" alt="{{ animation['title'] }}">
+                <div class="image-title">{{ animation['title'] }}</div>
+              </a>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-100" id="s-meditation">
+
+      <div class="container">
+
+        <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+          <div class="col">
+            <div class="overflow-hidden">
+              <h3 class="text-black " data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
+                  class="font-weight-bold ml-1">Meditations</span>
+                <a class="btn-back-to-top" data-toggle="tooltip" data-placement="top" title="Back to top" href="#top"
+                  data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg" width="8" alt=""></a>
+              </h3>
+              <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
+                Meditative Journeys</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="row justify-content-center">
+
+              <p>Meditations Here</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-200" id="s-artists">
+
+      <div class="container">
+
+        <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+          <div class="col">
+            <div class="overflow-hidden">
+              <h3 class="text-black " data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
+                  class="font-weight-bold ml-1">Artists</span>
+                  <a class="btn-back-to-top" data-toggle="tooltip" data-placement="top" title="Back to top" href="#top"
+                  data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg" width="8" alt=""></a>
+              </h3>
+              <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
+                Cosmic Voyagers</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="row justify-content-center">
+
+              {% for artist in artists %}
+              <div class="col-6 col-md-3 col-lg-3 px-2 team-item mb-4">
+                <a class="color-white" href="#!" data-remodal-target="{{ artist['modal'] }}">
+                  <div class="hoverbox w-75 rounded-circle overflow-hidden mx-auto">
+                    <img class="img-fluid" src="{{ artist['pic'] }}" alt="">
+                    <div class="hoverbox-content">
+                      <div class="d-flex align-items-end justify-content-center h-100">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <h6 class="fs-0 font-weight-bold mt-2 mb-0"><a class="text-black" href="#!"
+                    data-remodal-target="{{ artist['modal'] }}">{{ artist['name'] }}</a></h6>
+                <h6 class="ls-0">{{ artist['title'] }}</h6>
+              </div>
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="bg-1100 py-3 text-center">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 pr-lg-4 mb-4 mb-lg-0">
+
+            <p class="text-700 text-justify">Designed with <span class="fas fa-heart mx-2"></span> by emPower House</p>
+
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+  <a class="btn-back-to-top" href="#top" data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg"
+      width="8" alt=""></a>
+
+
+
+  <!-- ===============================================-->
+  <!--    Modal Dialog Boxes-->
+  <!-- ===============================================-->
+
+  <!-- MODAL MEDITATION -->
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-medit-vitorio">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">ooBlue</span> Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Heart Temple Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/ob-medit-heart-temple.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Power Center Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/ob-medit-power-center.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Observing The Thoughts Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/ob-medit-head-observing-thoughts.mp3"
+            type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">DNA Expand Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/ob-medit-dna-expand.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Gratitude Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/ob-medit-gratitude.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Divine Love</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/iu-medit-skip-divine-love.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Relax</span> Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Relax Deeper (4 minutes)</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/iu-wk02-medit-relax-4min.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Relax Deeper (12 minutes)</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/iu-wk02-medit-relax-12min.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Practical Intuition</span> Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Body Scan Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/pi-wk02-medit-body-scan.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Infinite Source Within</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/pi-wk02-medit-inf-source-within.mp3"
+            type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Wise One Within</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/pi-wk03-medit00-wise-one-within-all.mp3"
+            type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Root Center Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/vitorio/pi-wk04-medit-root.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-medit-evia">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Evia</span> Aur</h4>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">ooBlue</span> Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Higher Heart Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/meditation/evia/evia-HigherHeart-Wish-meditation.mp3"
+            type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+
+
+  <!-- MODAL MUSIC -->
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-anne">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Hanna</span> & Anne</h4>
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Energy Centers</span> Sound Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">The Crown - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c07-crown.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Third Eye - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c06-3rdeye.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Throat - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c05-thoat.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Heart - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c04-heart.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Solar Plexus - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c03-solarplex.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Sacral Center - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c02-sacral.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Root Center - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c01-root.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-laeela">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Laeela</span> David & Neelam</h4>
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Day In Bliss</span> Sound Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Good Morning - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-01-good-morning.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Mind To Heart - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-02-mind-to-heart.mp3"
+            type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">I Am - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-04-i-am.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Polarities Journey - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-05-a-journey.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Gentle Wind - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-05-instrumental.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Divine Coouple - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-06-divine-couple.mp3"
+            type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Good Night - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-03-good-night.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-pepe">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Pepe</span> Danza</h4>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Chakra</span> Sound Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Soul Star Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s08-higher-self.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Crown Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s07-all-rainbow.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Third Eye Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s06-indigo-transcendence.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Throat Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s05-blue-communication.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Heart Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s04-green-love.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Solar Plexus Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s03-yellow-power.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Sacral Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s02-orange-creativity.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Root Chakra - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s01-red-grounding.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Acceptance</span> Sound Meditations</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Transendence - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-6-Transendence.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Acceptance - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-5-Acceptance.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Depression - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-4-Depression.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Barganing - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-3-Barganing.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Anger - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-2-Anger.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Denial - Sound Meditation</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-1-Denial.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <div class="card-header text-left">
+      <h5 class="fs-1"><span class="font-weight-bold">Ecstatic</span> Dances</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">Ecstatic Dance - 30 min. Sound Journey</p>
+        <audio class="player" controls>
+          <source src="../static/assets/media-cms/sound/pepe-ext/pepe-ecstatic-dance.mp3" type="audio/mp3" />
+        </audio>
+      </li>
+    </ul>
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+
+  <!-- MODAL ARTISTS -->
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-tom">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-tom.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-tom.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-tom.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-tom.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-tom.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-tom.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-tom.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-evia">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Evia</span> Aur</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-evia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-evia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-evia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-evia2.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-evia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-evia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-evia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-evia.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-vitorio.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-vitorio.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-vitorio.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-vitorio.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-vitorio.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-vitorio.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-vitorio.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-giacomo.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-giacomo.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-giacomo.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-giacomo.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-giacomo.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-giacomo.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-giacomo.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-cheryl.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-cheryl.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-cheryl.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-cheryl.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-cheryl.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-cheryl.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-cheryl.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-marita">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-marita.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-marita.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-marita.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-marita.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-marita.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-marita.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-marita.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-claudia">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-claudia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-claudia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-claudia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-claudia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-claudia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-claudia.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-claudia.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-hanna">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-hanna.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-hanna.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-hanna.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-hanna.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-hanna.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-hanna.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-hanna.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-evan">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Evan</span> </h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-evan.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-evan.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-evan.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-evan.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-evan.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-evan.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-evan.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-maria">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-maria.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-maria.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-maria.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-maria.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-maria.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-maria.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-maria.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-bella">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-bella.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-bella.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-bella.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-bella.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-bella.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-bella.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-bella.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-nas">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-nas.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-nas.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-nas.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-nas.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-nas.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-nas.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-nas.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-eve">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-eve.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-eve.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-eve.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-eve.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-eve.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-eve.jpg" alt=""><br>
+    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-eve.jpg" alt="">
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+
+
+
+  <!-- MODAL SOON... -->
+
+  <div class="remodal rounded-soft" data-remodal-id="modal-soon">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4>Coming Soon...<span class="font-weight-bold"></span></h4>
+    <!-- <p class="text-sans-serif text-center mb-3" >COMING SOON</p> -->
+    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
+  </div>
+  <!-- Modal Dialog Boxes close ===================-->
+  <!-- ============================================-->
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="../static/assets/js/jquery.min.js"></script>
+  <script src="../static/assets/js/bootstrap.js"></script>
+  <script src="../static/assets/js/plugins.js"></script>
+  <script src="../static/assets/js/theme.js"></script>
+  <script src="../static/assets/lib/plyr/plyr.polyfilled.min.js"></script>
+  <script src="../static/assets/lib/owl.carousel/owl.carousel.js"></script>
+  <script src="../static/assets/lib/remodal/remodal.min.js"></script>
+  <script src="../static/assets/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js"></script>
+
+  <!-- <script src="../static/assets/js/stickyfill.min.js"></script> -->
+  <!-- <script src="../static/assets/lib/@fortawesome/all.min.js"></script> -->
+  <!-- <script src="../static/assets/js/popper.min.js"></script> -->
+  <!-- <script src="../static/assets/js/rellax.min.js"></script> -->
+  <!-- <script src="../static/assets/js/progressbar.min.js"></script> -->
+
+  <script src="../static/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+  <script src="../static/assets/lib/hover-dir/jquery.hoverdir.js"></script>
+  <script src="/public/courses/Session.js"></script> <!-- enable courses section on Sessionly basis -->
+
+
+  <script>
+    // Get all audio players
+    const players = document.querySelectorAll('audio.player');
+
+    // Get all video players (assuming they are initialized with Plyr)
+    const videoPlayers = Array.from(document.querySelectorAll('.player[data-plyr-provider]')).map(player => {
+      const plyrInstance = new Plyr(player);
+      plyrInstance.volume = 1; // Set initial volume to full
+      return plyrInstance; // Return the Plyr instance
+    });
+
+    // Function to toggle mute/unmute for all audio and video players
+    let isMuted = false; // Track mute state
+
+    function toggleMute() {
+      isMuted = !isMuted; // Toggle mute state
+
+      // Set volume for audio players
+      players.forEach(audioPlayer => {
+        audioPlayer.volume = isMuted ? 0 : 1; // Mute or unmute
+      });
+
+      // Set volume for video players using Plyr API
+      videoPlayers.forEach(videoPlayer => {
+        videoPlayer.volume = isMuted ? 0 : 1; // Mute or unmute
+      });
+
+      // Update the icon based on mute state
+      const muteIcon = document.getElementById('mute-icon');
+
+      // Clear existing icon classes
+      muteIcon.classList.remove('fa-volume-mute', 'fa-volume-up');
+
+      // Add the appropriate icon class based on the mute state
+      if (isMuted) {
+        muteIcon.classList.add('fa-volume-mute'); // Show mute icon when muted
+      } else {
+        muteIcon.classList.add('fa-volume-up'); // Show unmute icon when unmuted
+      }
+
+    }
+
+    // Add event listener to the mute toggle menu item
+    document.getElementById('mute-toggle').addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default anchor behavior
+      toggleMute(); // Call the toggle mute function
+    });
+
+    // Function to pause all audio players
+    function pauseAllAudio() {
+      players.forEach(audioPlayer => {
+        audioPlayer.pause();
+      });
+    }
+
+    // Function to mute all video players
+    function muteAllVideos() {
+      videoPlayers.forEach(videoPlayer => {
+        videoPlayer.volume = 0; // Mute the video player
+      });
+    }
+
+    // Function to unmute all video players
+    function unmuteAllVideos() {
+      videoPlayers.forEach(videoPlayer => {
+        videoPlayer.volume = 1; // Restore volume to the video player
+      });
+    }
+
+    // Add event listener to each audio player
+    players.forEach(player => {
+      player.addEventListener('play', () => {
+        // Pause all other audio players
+        players.forEach(otherPlayer => {
+          if (otherPlayer !== player) {
+            otherPlayer.pause();
+          }
+        });
+
+        // Mute all video players
+        muteAllVideos();
+      });
+    });
+
+    // Add event listener to each video player
+    videoPlayers.forEach(videoPlayer => {
+      videoPlayer.on('play', () => {
+        // Pause all audio players when a video is played
+        pauseAllAudio();
+
+        // Unmute all video players (if needed)
+        unmuteAllVideos();
+
+        // Pause all other video players
+        videoPlayers.forEach(otherVideoPlayer => {
+          if (otherVideoPlayer !== videoPlayer) {
+            otherVideoPlayer.pause();
+          }
+        });
+      });
+    });
+
+    // Function to skip forward or backward
+    function skipMedia(event) {
+      const activeVideoPlayer = videoPlayers.find(videoPlayer => videoPlayer.playing);
+      const activeAudioPlayer = Array.from(players).find(player => !player.paused);
+
+      if (event.key === 'ArrowRight') {
+        // Skip forward 10 seconds for the active video player
+        if (activeVideoPlayer) {
+          activeVideoPlayer.currentTime = Math.min(activeVideoPlayer.duration, activeVideoPlayer.currentTime + 10);
+        }
+        // Skip forward 10 seconds for the active audio player
+        if (activeAudioPlayer) {
+          activeAudioPlayer.currentTime = Math.min(activeAudioPlayer.duration, activeAudioPlayer.currentTime + 10);
+        }
+      } else if (event.key === 'ArrowLeft') {
+        // Skip backward 10 seconds for the active video player
+        if (activeVideoPlayer) {
+          activeVideoPlayer.currentTime = Math.max(0, activeVideoPlayer.currentTime - 10);
+        }
+        // Skip backward 10 seconds for the active audio player
+        if (activeAudioPlayer) {
+          activeAudioPlayer.currentTime = Math.max(0, activeAudioPlayer.currentTime - 10);
+        }
+      }
+    }
+
+    // Function to add a new video to bg-holder
+    function addVideo(videoSrc) {
+      // Create a new video element
+      var newVideo = document.createElement('video');
+      newVideo.className = 'bg-video'; // Add the same class for styling
+      newVideo.autoplay = true; // Set autoplay
+      newVideo.loop = true; // Set loop
+      newVideo.muted = true; // Set muted
+
+      // Create a source element for the new video
+      var source = document.createElement('source');
+      source.src = videoSrc; // Set the source URL
+      source.type = 'video/mp4'; // Set the type
+
+      // Append the source to the video element
+      newVideo.appendChild(source);
+
+      // Append the new video to the div
+      var bgHolder = document.querySelector('.bg-holder');
+      bgHolder.appendChild(newVideo);
+    }
+
+    // addVideo('../static/assets/media-cms/video/anim/Water-01.mp4');
+
+    // Add event listener for keydown
+    document.addEventListener('keydown', skipMedia);
+  </script>
+
+</body>
+
+</html>

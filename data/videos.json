@@ -1,0 +1,78 @@
+[
+  {
+      "modal": "modal-video",
+      "artist": "<span class='font-weight-bold'>Video</span> Backgrounds",
+      "albums": [
+          {
+              "albumName": "<span class='font-weight-bold'>Water</span> Scenes",
+              "albumVideos": [
+                {
+                    "title": "Blue Wave",
+                    "thumb": "/static/assets/media-cms/video/anim/blue-wave.jpg",
+                    "src": "/static/assets/media-cms/video/anim/blue-wave.mp4"
+                },
+                {
+                    "title": "Blue",
+                    "thumb": "/static/assets/media-cms/video/anim/water-01.jpg",
+                    "src": "/static/assets/media-cms/video/anim/water-01.mp4"
+                },
+                {
+                    "title": "Crystaline",
+                    "thumb": "/static/assets/media-cms/video/anim/water-02.jpg",
+                    "src": "/static/assets/media-cms/video/anim/water-02.mp4" 
+                },
+                {
+                    "title": "Whales",
+                    "thumb": "/static/assets/media-cms/video/anim/ob-whales-fast.jpg",
+                    "src": "/static/assets/media-cms/video/anim/ob-whales-fast.mp4"
+                }
+              ]
+          },
+          {
+              "albumName": "<span class='font-weight-bold'>Landscape</span> Scenes",
+              "albumVideos": [
+                  {
+                    "title": "New Zealand Flyover",
+                    "thumb": "/static/assets/media-cms/video/anim/ls-nz-flyover.jpg",
+                    "src": "/static/assets/media-cms/video/anim/ls-nz-flyover.mp4"
+                  },
+                  {
+                    "title": "Scotland Flyover",
+                    "thumb": "/static/assets/media-cms/video/anim/ls-scotland.jpg",
+                    "src": "/static/assets/media-cms/video/anim/ls-scotland.mp4"
+                  },
+                  {
+                    "title": "Madeira Flyover",
+                    "thumb": "/static/assets/media-cms/video/anim/ls-madeira.jpg",
+                    "src": "/static/assets/media-cms/video/anim/ls-madeira.mp4"
+                  },
+                  {
+                    "title": "Alps & Dolomites Flyover",
+                    "thumb": "/static/assets/media-cms/video/anim/ls-dolomites.jpg",
+                    "src": "/static/assets/media-cms/video/anim/ls-dolomites.mp4"
+                  }
+              ]
+          },
+          {
+              "albumName": "<span class='font-weight-bold'>Time</span> Lapse",
+              "albumVideos": [
+                {
+                    "title": "Atacama Desert",
+                    "thumb": "/static/assets/media-cms/video/anim/tt-atacama.jpg",
+                    "src": "/static/assets/media-cms/video/anim/tt-atacama.mp4"
+                  },
+                  {
+                    "title": "Night Stars",
+                    "thumb": "/static/assets/media-cms/video/anim/tt-stars-timelapse.jpg",
+                    "src": "/static/assets/media-cms/video/anim/tt-stars-timelapse.mp4"
+                  },
+                  {
+                    "title": "Northern Lights - Alaska",
+                    "thumb": "/static/assets/media-cms/video/anim/tt-north-light-alaska.jpg",
+                    "src": "/static/assets/media-cms/video/anim/tt-north-light-alaska.mp4"
+                  }
+              ]
+          }
+      ]
+  }
+]

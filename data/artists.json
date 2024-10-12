@@ -3,41 +3,48 @@
         "name": "Laeela - David & Neelam", 
         "title": "Musicians & Yogis",
         "pic": "../static/assets/img/team/team-laeela.jpg",
-        "modal": "modal-laeela"
+        "modal": "modal-laeela-bio"
     },
 
     {
         "name": "Pepe Danza", 
         "title": "World Musician, Zen Master",
         "pic": "../static/assets/img/team/team-pepe.jpg",
-        "modal": "modal-pepe"
+        "modal": "modal-pepe-bio"
     },
 
     {
         "name": "Hanna & Anne", 
         "title": "Musician Yoginis",
         "pic": "../static/assets/img/team/team-hanna2.jpg",
-        "modal": "modal-hanna-anne"
+        "modal": "modal-hanna-anne-bio"
+    },
+    
+    {
+        "name": "Giacomo Galtarossa", 
+        "title": "Wannabe Monk",
+        "pic": "../static/assets/img/team/team-giacomo.jpg",
+        "modal": "modal-giacomo-bio"
     },
 
     {
         "name": "Marita Hinsel", 
         "title": "Fine Artist",
         "pic": "../static/assets/img/team/team-marita.jpg",
-        "modal": "modal-marita"
+        "modal": "modal-marita-bio"
     },
-
+    
     {
         "name": "Evia Aur", 
         "title": "Inner Designer",
         "pic": "../static/assets/img/team/team-evia.jpg",
-        "modal": "modal-evia"
+        "modal": "modal-evia-bio"
     },
 
     {
         "name": "Vitorio De Janeiro", 
         "title": "Soul Alchemist",
         "pic": "../static/assets/img/team/team-vitorio.jpg",
-        "modal": "modal-vitorio"
+        "modal": "modal-vitorio-bio"
     }
 ]

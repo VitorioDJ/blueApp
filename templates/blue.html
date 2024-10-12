@@ -37,6 +37,9 @@
   <link href="../static/assets/css/theme.css" rel="stylesheet">
   <link href="../static/assets/lib/plyr/plyr.css" rel="stylesheet">
 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+  <link href="../static/assets/css/vik-hor-scroll.css" rel="stylesheet">
+
 </head>
 
 
@@ -44,13 +47,13 @@
 
   <nav class="navbar navbar-expand-sm navbar-dark navbar-theme fixed-top py-0">
     <div class="container">
-      <a class="navbar-brand font-weight-normal ls-1" href="#top"
-        data-fancyscroll="data-fancyscroll" data-offset="64">
+      <!-- <a class="navbar-brand font-weight-normal ls-1" href="#top" data-fancyscroll="data-fancyscroll" data-offset="64">
         <img class="testimonial-company-logo d-inline-block opacity-80"
           src="../static/assets/img/logo/b&amp;w/col-logo.png" alt="" />
-      </a>
+      </a> -->
 
-      <a class="navbar-brand font-weight-normal" href="#" id="mute-toggle" data-fancyscroll="data-fancyscroll">
+      <a class="navbar-brand font-weight-normal" href="#" id="mute-toggle" data-fancyscroll="data-fancyscroll"
+        data-toggle="tooltip" data-placement="top" title="Mute / Unmute">
         <i class="fas fa-volume-up" id="mute-icon"></i>
       </a>
 
@@ -60,13 +63,56 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
         <ul class="navbar-nav ml-auto" id="navbar-one-page">
-          <li class="nav-item"><a class="nav-link" href="#the-artists" data-fancyscroll="data-fancyscroll"
-              data-offset="64"> <span class="nav-link-text">The Artists</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://courses.empower-house.org"
-              data-fancyscroll="data-fancyscroll" data-offset="64"> <span class="nav-link-text"><b>Logout</b></span></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown1"><b>Music</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown1">
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-pepe">Pepe Danza</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-laeela">Laeela</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-hanna-anne">Hanna & Anne</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown2"><b>Artwork</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown2">
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-evia">Evia</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-vitorio">Vitorio</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-giacomo">Giacomo</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-marita">Marita</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown3"><b>Video</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown3">
+              <a class="dropdown-item" href="#!"
+                onclick="addVideo('/static/assets/media-cms/video/anim/blue-wave.mp4');">Blue Wave</a>
+              <a class="dropdown-item" href="#!"
+                onclick="addVideo('/static/assets/media-cms/video/anim/water-01.mp4');">Blue Water</a>
+              <a class="dropdown-item" href="#!"
+                onclick="addVideo('/static/assets/media-cms/video/anim/water-02.mp4');">Crystaline</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-video">More...</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" id="dropdown4"><b>Meditation</b></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown4">
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-medit-vitorio">Vitorio</a>
+              <a class="dropdown-item" href="#!" data-remodal-target="modal-medit-evia">Evia</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://courses.empower-house.org" data-fancyscroll="data-fancyscroll"
+              data-offset="64" data-toggle="tooltip" data-placement="top" title="Logout">
+              <i class="fas fa-sign-out-alt fa-2x"></i> <!-- Font Awesome logout icon -->
+            </a>
           </li>
         </ul>
+
       </div>
     </div>
   </nav>
@@ -97,13 +143,16 @@
     <!-- ============================================-->
     <!-- End of Preloader ===========================-->
 
-
-    <section class="py-0 text-center overflow-hidden" id="top" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+    <section class="py-0 text-center" id="top" data-zanim-timeline="{}" data-zanim-trigger="scroll">
 
       <div class="bg-holder overlay overlay-z-index-1"
         style="background-image:url(../static/assets/img/headers/header-blue.jpg);">
-      </div>
 
+        <video class="bg-video" autoplay="autoplay" loop="loop" muted="muted">
+          <source src="../static/assets/media-cms/video/anim/blue-wave.mp4" type="video/mp4">
+        </video>
+
+      </div>
 
       <div class="header-overlay"></div>
       <div class="container">
@@ -111,862 +160,71 @@
         <div class="d-flex flex-center vh-100">
           <div class="header-text">
             <div class="overflow-hidden">
-              <img class="w-50 opacity-40" data-zanim-xs='{"duration":2,"delay":0}'
-              src="../static/assets/img/illustration/blue-title-2.png" alt="" />
-              <p class=" lead display-3 text-white fs-2 fs-md-4" data-zanim-xs='{"duration":2,"delay":0.8}'>Relax Deeper</p>
+              <img class="w-50 opacity-40 fade-effect" id="logo" data-zanim-xs='{"duration":3,"delay":0}'
+                src="../static/assets/img/illustration/blue-title-2.png" alt="" />
+              <p id="sub-title" class="lead display-3 text-white fs-2 fs-md-4 fade-effect"
+                data-zanim-xs='{"duration":3,"delay":1.2}'>Relax Deeper</p>
             </div>
-
-            <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-              <a class="btn btn-light hvr-sweep-top mt-8 px-4" href="#start-here" data-fancyscroll="data-fancyscroll"
-                data-offset="64">Start Here</a>
-            </div>
-
           </div>
         </div>
 
-        <div class="header-indicator-down"><a class="indicator indicator-down opacity-75" href="#start-here"
-            data-fancyscroll="data-fancyscroll" data-offset="64"><span class="indicator-arrow indicator-arrow-one"
-              data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span></a>
+        <div class="header-indicator-down">
+          <a class="indicator indicator-down opacity-75" href="#start-here" data-fancyscroll="data-fancyscroll"
+            data-offset="64">
+            <span class="indicator-arrow indicator-arrow-one"
+              data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"ease":"Back.easeOut","duration":1,"delay":1.5}'></span>
+          </a>
         </div>
 
       </div>
     </section>
 
-
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="pt-3 text-center bg-vik-200" id="start-here">
+    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-200" id="start-here">
 
       <div class="container">
-        <div class="row align-items-top">
 
-          <div class="col-md-2 text-left">
-          </div>
-
-          <div class="col-md-8 text-justify">
-
-            <ul class="nav nav-pills " id="pill-myTab" role="tablist">
-              {% for key, value in tabs.items() %}
-              <li class="nav-item">
-                <a class="nav-link {% if loop.first %} active{% endif %}" id="{{ value['id'] }}" data-toggle="tab"
-                  href="{{ value['href'] }}" role="tab" aria-control="{{ value['control'] }}"
-                  aria-selected="{% if loop.first %}true{% else %}false{% endif %}">{{ value['title'] }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-
-            <div class="tab-content mt-3" id="pill-myTabContent">
-
-              <div class="tab-pane fade show active" id="pill-tab-w1" role="tabpanel" aria-labelledby="w1-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #7 - Sahasrara <br><span class="fs--1 font-weight-semi-bold">Crown Chakra</span></h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Crown Chakra - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Crown Chakra - Sound Meditation</p>
-                      <audio class="player" controls controlsList="nodownload">
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s07-all-rainbow.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <!-- <br>
-                          <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s07-all-rainbow.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <div class="card-header text-left">
-                    <h5>Seal #7 - BODY MUDRAS</h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Mudra 1</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                  </ul>
-
-                  <!-- <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 2</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                          </div>
-                        </li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 3</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-                </div>
-                <!-- Card END -->
-
-                <!-- ARTWORK Link Anchor -->
-                <div id="artwork">.</div>
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-1">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-1">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab01']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab01']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-              </div>
-
-
-              <div class="tab-pane fade" id="pill-tab-w2" role="tabpanel" aria-labelledby="w2-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #6 - Ajna <br><span class="fs--1 font-weight-semi-bold">Third Eye Chakra</span></h5>
-                  </div>
-                  <!-- <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-text">Coming Soon...</p>
-                        </li>
-                    </ul> -->
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Third Eye - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Third Eye - Sound Meditation</p>
-                      <audio class="player" controls>
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s06-indigo-transcendence.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <!-- <br>
-                          <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s06-indigo-transcendence.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <!-- <div class="card-header text-left"><h5>Seal #6 - Body Mudras</h5></div>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 1</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="886123561"></div>
-                          </div>
-                        </li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 2</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="887652148"></div>
-                          </div>
-                        </li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 3</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="886145976"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-                </div>
-                <!-- Card END -->
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-2">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-2">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <!-- Begin ROW Sortable Container -->
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab02']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab02']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                      <!-- End ROW Sortable Container -->
-
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w3" role="tabpanel" aria-labelledby="w2-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #5 - Vishudda <br><span class="fs--1 font-weight-semi-bold">Throat Chakra</span></h5>
-                  </div>
-                  <!-- <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-text">Coming Soon...</p>
-                        </li>
-                    </ul> -->
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Throat Chakra - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Throat Chakra - Sound Meditation</p>
-                      <audio class="player" controls>
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s05-blue-communication.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <!-- <br>
-                          <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s05-blue-communication.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <!-- <div class="card-header text-left"><h5>Seal #5 - Body Mudras</h5></div>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 1</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="893056342"></div>
-                          </div>
-                        </li>
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 2</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="894477074"></div>
-                          </div>
-                        </li>
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 3</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="890795808"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-                </div>
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-3">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-3">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <!-- Begin ROW Sortable Container -->
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab03']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab03']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                      <!-- End ROW Sortable Container -->
-
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-              </div>
-
-
-
-              <div class="tab-pane fade" id="pill-tab-w4" role="tabpanel" aria-labelledby="w2-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #4 - Anahata <br><span class="fs--1 font-weight-semi-bold">Heart Chakra</span></h5>
-                  </div>
-
-                  <!-- <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-text">Call Recordings Coming Soon...</p>
-                        </li>
-                    </ul> -->
-
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Heart Chakra - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Heart Chakra - Sound Meditation</p>
-                      <audio class="player" controls>
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s04-green-love.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <br>
-                      <!-- <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s04-green-love.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <!-- <div class="card-header text-left"><h5>Seal #4 - Body Mudras</h5></div>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 1</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-
-                </div>
-
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-4">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-4">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <!-- Begin ROW Sortable Container -->
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab04']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab04']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                      <!-- End ROW Sortable Container -->
-
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w5" role="tabpanel" aria-labelledby="w2-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #3 - Manipura <br><span class="fs--1 font-weight-semi-bold">Solar Plexus Chakra</span></h5>
-                  </div>
-
-                  <!-- <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-text">Coming Soon...</p>
-                        </li>
-                    </ul> -->
-
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Solar Plexus - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Solar Plexus - Sound Meditation</p>
-                      <audio class="player" controls>
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s03-yellow-power.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <!-- <br>
-                          <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s03-yellow-power.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <!-- <div class="card-header text-left"><h5>Seal #3 - Body Mudras</h5></div>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 1</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="905077044"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-
-                </div>
-
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-5">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-5">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <!-- Begin ROW Sortable Container -->
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab05']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab05']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                      <!-- End ROW Sortable Container -->
-
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w6" role="tabpanel" aria-labelledby="w6-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #2 - Svadhisthana <br><span class="fs--1 font-weight-semi-bold">Sacral Chakra</span></h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Sacral Chakra - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Sacral Chakra - Sound Meditation</p>
-                      <audio class="player" controls>
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s02-orange-creativity.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <!-- <br>
-                          <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s02-orange-creativity.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <!-- <div class="card-header text-left"><h5>Seal #2 - Body Mudras</h5></div>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 1</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="905077044"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-                </div>
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-6">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-6">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <!-- Begin ROW Sortable Container -->
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab06']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab06']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                      <!-- End ROW Sortable Container -->
-
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-              </div>
-
-
-              <div class="tab-pane fade" id="pill-tab-w7" role="tabpanel" aria-labelledby="w7-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Seal #1 - Muladhara <br><span class="fs--1 font-weight-semi-bold">Root Chakra</span></h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Root Chakra - Body Activation</p>
-                      <div class="rounded overflow-hidden pb-2">
-                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="1005233965"></div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <p class="card-title lead font-weight-medium">Root Chakra - Sound Meditation</p>
-                      <audio class="player" controls>
-                        <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s01-red-grounding.mp3"
-                          type="audio/mp3" />
-                      </audio>
-                      <!-- <br>
-                          <a class="btn btn-dark hvr-sweep-top mt-2 px-4" href="../static/assets/media-cms/sound/pepe-sssi/sssi-s01-red-grounding.mp3" download data-fancyscroll="data-fancyscroll" data-offset="64">Download</a>
-                          <p class="card-text">Click to download Audio Recording to your device</p> -->
-                    </li>
-                  </ul>
-
-                  <!-- <div class="card-header text-left"><h5>Seal #1 - Body Mudras</h5></div>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                          <p class="card-title lead font-weight-medium">Mudra 1</p>
-                          <div class="rounded overflow-hidden pb-2">
-                            <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="905077044"></div>
-                          </div>
-                        </li>
-                    </ul> -->
-                </div>
-
-                <!-- ARTWORK SECTION -->
-                <section class="pt-3 pt-lg-5 pb-0 pb-lg-2 text-center bg-vik-200 pb-0" id="artwork-7">
-
-                  <div class="container-fluid">
-                    <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                      <div class="col">
-                        <div class="overflow-hidden">
-                          <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                              class="font-weight-bold ml-1">Artwork</span></h3>
-                          <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                            For Visual Meditation</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="sortable" data-options='{"layoutMode":"packery"}' id="art-7">
-                      <div class="menu mb-3 justify-content-center">
-                        <div class="item active" data-filter="*">all</div>
-                        <div class="item" data-filter=".penta-1">Penta 1</div>
-                        <div class="item" data-filter=".penta-2">Penta 2</div>
-                        <div class="item" data-filter=".penta-3">Penta 3</div>
-                      </div>
-
-                      <!-- Begin ROW Sortable Container -->
-                      <div class="row sortable-container sortable-container-gutter-fix hoverdir-grid"
-                        data-zanim-timeline="{}" data-zanim-trigger="scroll">
-
-                        {% for value in art %}
-                        <div class="col-sm-6 col-lg-4 px-2 sortable-item {{ value['penta'] }} mb-3"
-                          data-zanim-xs='{"animation":"zoom-in","delay":0}'>
-                          <div class="hoverdir-item position-relative rounded overflow-hidden"
-                            data-zanim-xs='{"duration":1.5,"animation":"zoom-in","delay":0}'>
-                            <a class="d-block" href="#!" data-remodal-target="{{ value['tab07']['modal'] }}"><img
-                                class="img-fluid rounded" src="{{ value['tab07']['pic'] }}" alt="" />
-                              <div class="hoverdir-item-content">
-                                <div class="h-100 d-flex flex-center p-3 hoverdir-text">
-                                  <div class="text-700">
-                                    <h3 class="text-white lh-1 fs-2">{{ value['name'] }}</h3>
-                                    <p class="ls-0 mb-0">{{ value['title'] }}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        {% endfor %}
-
-                      </div>
-                      <!-- End ROW Sortable Container -->
-
-                    </div>
-
-                  </div>
-                </section>
-                <!-- END ARTWORK SECTION -->
-
-              </div>
-
-
-              <div class="tab-pane fade" id="pill-tab-w8" role="tabpanel" aria-labelledby="w8-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Session 8 : Infinite You </h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-text">Coming Soon...</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w9" role="tabpanel" aria-labelledby="w9-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Bonus Session</h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-text">Coming Soon...</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w10" role="tabpanel" aria-labelledby="w10-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Extra</h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-text">Coming Soon...</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w11" role="tabpanel" aria-labelledby="w11-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Extra 2</h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-text">Coming Soon...</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="pill-tab-w12" role="tabpanel" aria-labelledby="w12-tab">
-                <div class="card">
-                  <div class="card-header text-left">
-                    <h5>Extra 3</h5>
-                  </div>
-                  <ul class="list-group list-group-flush text-left">
-                    <li class="list-group-item">
-                      <p class="card-text">Coming Soon...</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-
+        <div class="row mb-2" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+          <div class="col">
+            <div class="overflow-hidden">
+              <h3 class="text-black" data-zanim-xs='{"duration":"1.5","delay":"0"}'>Video<span
+                  class="font-weight-bold ml-1">Backgrounds</span>
+                <a class="btn-back-to-top" data-toggle="tooltip" data-placement="top" title="Back to top" href="#top"
+                  data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg" width="8" alt=""></a>
+              </h3>
+              <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
+                Select The Background</p>
             </div>
           </div>
-
-          <div class="col-md-2">
-          </div>
-
         </div>
+
+        {% for video in videos %}
+        <div class="row">
+          <div class="col-lg-8 mx-auto flex-center">
+            <!-- <h3>{{ video.artist | safe }}</h3> -->
+        
+            {% for album in video.albums %}
+            <div class="card-header text-left mt-3">
+              <h5 class="fs-1">{{ album.albumName | safe }}</h5>
+            </div>
+            <div class="image-scroll-container">
+              <div class="image-scroll my-2">
+                {% for videoItem in album.albumVideos %}
+                <div class="image-item">
+                  <a href="#!" onclick="addVideo('{{ videoItem.src }}');">
+                    <img src="{{ videoItem.thumb }}" alt="{{ videoItem.title }}">
+                    <div class="image-title">{{ videoItem.title }}</div>
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+
       </div>
       <!-- end of .container-->
 
@@ -975,10 +233,9 @@
     <!-- ============================================-->
 
 
-
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-100" id="the-artists">
+    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-100" id="s-meditation">
 
       <div class="container">
 
@@ -986,9 +243,12 @@
           <div class="col">
             <div class="overflow-hidden">
               <h3 class="text-black " data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
-                  class="font-weight-bold ml-1">Artists</span></h3>
+                  class="font-weight-bold ml-1">Meditations</span>
+                <a class="btn-back-to-top" data-toggle="tooltip" data-placement="top" title="Back to top" href="#top"
+                  data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg" width="8" alt=""></a>
+              </h3>
               <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
-                Cosmic Voyagers</p>
+                Meditative Journeys</p>
             </div>
           </div>
         </div>
@@ -999,9 +259,7 @@
 
             <div class="row justify-content-center">
 
-              {% for artist in artists %}
-              {% include 'artist-item.html' %}
-              {% endfor %}
+              <p>Meditations Here</p>
 
             </div>
           </div>
@@ -1018,22 +276,55 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <!-- <section class="py-5 text-center bg-black text-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+    <section class="pt-3 pt-lg-5 pb-4 pb-lg-6 text-center bg-vik-200" id="s-artists">
 
-        <div class="container">
-          <div class="overflow-hidden">
-            <h4 class="font-weight-normal text-white mb-1" data-zanim-xs='{"duration":1.5,"delay":0}'>Seven Music Pieces<br class="d-block d-sm-none" /> For Seven Sacred Seals</h4>
+      <div class="container">
+
+        <div class="row mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+          <div class="col">
+            <div class="overflow-hidden">
+              <h3 class="text-black " data-zanim-xs='{"duration":"1.5","delay":"0"}'>The<span
+                  class="font-weight-bold ml-1">Artists</span>
+                <a class="btn-back-to-top" data-toggle="tooltip" data-placement="top" title="Back to top" href="#top"
+                  data-fancyscroll><img src="../static/assets/img/line-icons/upload-arrow.svg" width="8" alt=""></a>
+              </h3>
+              <p class="text-uppercase text-800 ls-0 mb-3" data-zanim-xs='{"duration":"1.5","delay":0.1}'>
+                Cosmic Voyagers</p>
+            </div>
           </div>
-          <div class="overflow-hidden">
-            <p data-zanim-xs='{"duration":1.5,"delay":0.1}'>Musical pieces by Hanna, Anne & Evan <br>Channeled for Seven Energy Centers.</p>
-          </div>
-          <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'><a class="btn btn-light btn-sm hvr-sweep-top mt-2" href="./x-music.html">Music Pieces</a></div>
         </div>
 
-      </section> -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row justify-content-center">
+
+              {% for artist in artists %}
+              <div class="col-6 col-md-3 col-lg-3 px-2 team-item mb-4">
+                <a class="color-white" href="#!" data-remodal-target="{{ artist['modal'] }}">
+                  <div class="hoverbox w-75 rounded-circle overflow-hidden mx-auto">
+                    <img class="img-fluid" src="{{ artist['pic'] }}" alt="">
+                    <div class="hoverbox-content">
+                      <div class="d-flex align-items-end justify-content-center h-100">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <h6 class="fs-0 font-weight-bold mt-2 mb-0"><a class="text-black" href="#!"
+                    data-remodal-target="{{ artist['modal'] }}">{{ artist['name'] }}</a></h6>
+                <h6 class="ls-0">{{ artist['title'] }}</h6>
+              </div>
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end of .container-->
+
+    </section>
     <!-- <section> close ============================-->
     <!-- ============================================-->
-
 
 
 
@@ -1074,895 +365,95 @@
   <!--    Modal Dialog Boxes-->
   <!-- ===============================================-->
 
-  <!-- MODAL SEAL-1 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Chaudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s1">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <!-- MODAL SEAL-2 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s2">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <!-- MODAL SEAL-3 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia2-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-evia2.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s3">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <!-- MODAL SEAL-4 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s4">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <!-- MODAL SEAL-5 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s5">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s5-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-
-  <!-- MODAL SEAL-6 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s6">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s6-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <!-- MODAL SEAL-7 -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-tom-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Tom</span> Brooke</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-tom.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evia-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-evia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-vitorio-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Vitorio</span> De Janeiro</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-vitorio.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-giacomo-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Giacomo</span> Galtarossa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-giacomo.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-cheryl-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Cheryl</span> Wayt</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p1-cheryl.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-marita-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Marita</span> Hinnsell</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-marita.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-claudia-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Claudia</span> Ochoa</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-claudia.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> Winkler</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-hanna.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-evan-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evan</span> </h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p2-evan.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-maria-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Maria</span> Hoffman</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-maria.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-bella-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Bella</span> Bablumian</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-bella.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-nas-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Nas</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-nas.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-eve-s7">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Eve</span> Hansra</h4>
-    <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s7-p3-eve.jpg" alt="">
-    <button class="btn btn-sm btn-dark mr-3" data-remodal-action="confirm">OK</button>
-  </div>
+  <!-- MODAL VIDEO -->
+
+  {% for video in videos %}
+  <div class="remodal rounded-soft" data-remodal-id="{{ video.modal }}">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4>{{ video.artist | safe }}</h4>
+
+    {% for album in video.albums %}
+    <div class="card-header text-left mt-3">
+      <h5 class="fs-1">{{ album.albumName | safe }}</h5>
+    </div>
+    <div class="image-scroll-container">
+      <div class="image-scroll my-2">
+        {% for videoItem in album.albumVideos %}
+        <div class="image-item">
+          <a href="#!" onclick="addVideo('{{ videoItem.src }}');">
+            <img src="{{ videoItem.thumb }}" alt="{{ videoItem.title }}">
+            <div class="image-title">{{ videoItem.title }}</div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+  {% endfor %}
+
+
+
+  <!-- MODAL MEDITATION -->
+
+  {% for artist in meditations %}
+  <div class="remodal rounded-soft" data-remodal-id="{{ artist.modal }}">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4>{{ artist.artist | safe }}</h4>
+
+    {% for album in artist.albums %}
+    <div class="card-header text-left mt-3">
+      <h5 class="fs-1">{{ album.albumName | safe }}</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      {% for song in album.albumSongs %}
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">{{ song.name }}</p>
+        <audio class="player" controls>
+          <source src="{{ song.src }}" type="audio/mp3" />
+        </audio>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+  {% endfor %}
+
+
+
+  <!-- MODAL MUSIC -->
+
+  {% for artist in playlist %}
+  <div class="remodal rounded-soft" data-remodal-id="{{ artist.modal }}">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <h4>{{ artist.artist | safe }}</h4>
+
+    {% for album in artist.albums %}
+    <div class="card-header text-left mt-3">
+      <h5 class="fs-1">{{ album.albumName | safe }}</h5>
+    </div>
+    <ul class="list-group list-group-flush text-left">
+      {% for song in album.albumSongs %}
+      <li class="list-group-item">
+        <p class="card-title font-weight-medium">{{ song.name }}</p>
+        <audio class="player" controls>
+          <source src="{{ song.src }}" type="audio/mp3" />
+        </audio>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
+  </div>
+  {% endfor %}
 
 
   <!-- MODAL ARTISTS -->
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-hanna-anne">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Hanna</span> & Anne</h4>
-    <div class="card-header text-left">
-      <h5 class="fs-1"><span class="font-weight-bold">Energy Centers</span> Sound Meditations</h5>
-    </div>
-    <ul class="list-group list-group-flush text-left">
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">The Crown - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c07-crown.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Third Eye - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c06-3rdeye.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Throat - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c05-thoat.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Heart - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c04-heart.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Solar Plexus - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c03-solarplex.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Sacral Center - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c02-sacral.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Root Center - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/hanna-anne/ha-c01-root.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-    </ul>
-
-    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-laeela">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Laeela</span> David & Neelam</h4>
-    <div class="card-header text-left">
-      <h5 class="fs-1"><span class="font-weight-bold">Day In Bliss</span> Sound Meditations</h5>
-    </div>
-    <ul class="list-group list-group-flush text-left">
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Good Morning - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-01-good-morning.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Mind To Heart - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-02-mind-to-heart.mp3"
-            type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">I Am - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-04-i-am.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Polarities Journey - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-05-a-journey.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Gentle Wind - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-05-instrumental.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Divine Coouple - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-06-divine-couple.mp3"
-            type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Good Night - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/david-neelam-corfu23/dn-03-good-night.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-    </ul>
-
-    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
-  </div>
-
-
-  <div class="remodal rounded-soft" data-remodal-id="modal-pepe">
-    <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Pepe</span> Danza</h4>
-
-    <div class="card-header text-left">
-      <h5 class="fs-1"><span class="font-weight-bold">Chakra</span> Sound Meditations</h5>
-    </div>
-    <ul class="list-group list-group-flush text-left">
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Soul Star Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s08-higher-self.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Crown Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s07-all-rainbow.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Third Eye Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s06-indigo-transcendence.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Throat Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s05-blue-communication.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Heart Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s04-green-love.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Solar Plexus Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s03-yellow-power.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Sacral Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s02-orange-creativity.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Root Chakra - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-sssi/sssi-s01-red-grounding.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-    </ul>
-
-    <div class="card-header text-left">
-      <h5 class="fs-1"><span class="font-weight-bold">Acceptance</span> Sound Meditations</h5>
-    </div>
-    <ul class="list-group list-group-flush text-left">
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Transendence - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-6-Transendence.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Acceptance - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-5-Acceptance.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Depression - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-4-Depression.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Barganing - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-3-Barganing.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Anger - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-2-Anger.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Denial - Sound Meditation</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-fffd/fffd-1-Denial.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-    </ul>
-
-    <div class="card-header text-left">
-      <h5 class="fs-1"><span class="font-weight-bold">Ecstatic</span> Dances</h5>
-    </div>
-    <ul class="list-group list-group-flush text-left">
-      <li class="list-group-item">
-        <p class="card-title font-weight-medium">Ecstatic Dance - 30 min. Sound Journey</p>
-        <audio class="player" controls>
-          <source src="../static/assets/media-cms/sound/pepe-ext/pepe-ecstatic-dance.mp3" type="audio/mp3" />
-        </audio>
-      </li>
-    </ul>
-
-    <button class="btn btn-sm btn-dark mr-3 mt-3" data-remodal-action="confirm">OK</button>
-  </div>
-
 
   <div class="remodal rounded-soft" data-remodal-id="modal-tom">
     <button class="remodal-close" data-remodal-action="close"></button>
@@ -1979,15 +470,9 @@
 
   <div class="remodal rounded-soft" data-remodal-id="modal-evia">
     <button class="remodal-close" data-remodal-action="close"></button>
-    <h4><span class="font-weight-bold">Evia</span> Dalbina</h4>
+    <h4><span class="font-weight-bold">Evia</span> Aur</h4>
     <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s1-p1-evia.jpg" alt=""><br>
     <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s2-p1-evia.jpg" alt=""><br>
-    <!-- <div class=container>
-        <div class=row>
-          <img class="rounded w-50 mb-3" src="../static/assets/img/projects/s3-p1-evia.jpg" alt=""> 
-          <img class="rounded w-50 mb-3" src="../static/assets/img/projects/s3-p1-evia2.jpg" alt="">
-        </div>
-      </div> -->
     <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-evia.jpg" alt=""><br>
     <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s3-p1-evia2.jpg" alt=""><br>
     <img class="rounded w-100 mb-3" src="../static/assets/img/projects/s4-p1-evia.jpg" alt=""><br>
@@ -2306,10 +791,58 @@
       }
     }
 
+
+    // Handle Logo Fade-In Fade-Out
+    const logo = document.getElementById('logo');
+    const subTitle = document.getElementById('sub-title');
+
+    // Function to reset opacity on click
+    function resetOpacity() {
+      logo.style.opacity = '1';
+      subTitle.style.opacity = '1';
+      logo.classList.remove('fade-effect');
+      subTitle.classList.remove('fade-effect');
+
+      // Restart the fade-out effect after a short delay
+      setTimeout(() => {
+        logo.classList.add('fade-effect');
+        subTitle.classList.add('fade-effect');
+      }, 100); // Delay to allow the opacity to reset
+    }
+
+    // Add click event listener
+    logo.addEventListener('click', resetOpacity);
+    subTitle.addEventListener('click', resetOpacity);
+
+
+    
+    // Function to add a new video to bg-holder
+    function addVideo(videoSrc) {
+      // Create a new video element
+      var newVideo = document.createElement('video');
+      newVideo.className = 'bg-video'; // Add the same class for styling
+      newVideo.autoplay = true; // Set autoplay
+      newVideo.loop = true; // Set loop
+      newVideo.muted = true; // Set muted
+
+      // Create a source element for the new video
+      var source = document.createElement('source');
+      source.src = videoSrc; // Set the source URL
+      source.type = 'video/mp4'; // Set the type
+
+      // Append the source to the video element
+      newVideo.appendChild(source);
+
+      // Append the new video to the div
+      var bgHolder = document.querySelector('.bg-holder');
+      bgHolder.appendChild(newVideo);
+    }
+
+    // addVideo('../static/assets/media-cms/video/anim/Water-01.mp4');
+
     // Add event listener for keydown
     document.addEventListener('keydown', skipMedia);
   </script>
-
 
 </body>
 
