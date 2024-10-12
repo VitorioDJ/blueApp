@@ -1,3 +1,5 @@
 ./env/
-./static/assets/media-cms/
+static/assets/media-cms/video/anim/ls-madeira.mp4
+static/assets/media-cms/video/anim/ls-nz-flyover.mp4
+static/assets/media-cms/video/anim/ls-scotland.mp4
 .DS_Store
